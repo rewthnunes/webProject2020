@@ -10,7 +10,8 @@ import { PageNotFoundComponent } from './page-not-found/page-not-found.component
 import { RodapeComponent } from './rodape/rodape.component';
 import { ContatoComponent } from './contato/contato.component';
 import { SobreComponent } from './sobre/sobre.component';
-// import {ButtonModule} from 'primeng/button';
+import { InputTextareaModule } from 'primeng/inputtextarea';
+import { FormsModule }   from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -27,7 +28,8 @@ import { SobreComponent } from './sobre/sobre.component';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    // ButtonModule
+    InputTextareaModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

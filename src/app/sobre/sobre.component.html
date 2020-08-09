@@ -4,162 +4,169 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
 
-<div class="container-fluid">
-
-    <div class="container">
-        <h2>Projeto Final - Desenvolvimento WEB 2020</h2>
-        <p><strong>Nota:</strong> O grupo deverá desenvolver um site que exiba pontos geográficos de acordo com um tema escolhido. Imagine um Google Maps com itens específicos exibidos no mapa como por exemplo praças de Campinas. </p>
-        <div class="panel-group" id="accordion">
-
-          <div class="panel panel-default">
-            <div class="panel-heading">
-              <h4 class="panel-title">
-                <a data-toggle="collapse" data-parent="#accordion" style="cursor:pointer;" (click)="openCloseCollapse('collapse1')">
-                  1. Descrição do projeto</a>
-              </h4>
-            </div>
-            <div id="collapse1" class="panel-collapse collapse in" *ngIf="flag.coll1">
-              <div class="panel-body">
-                <ul>
-                  <li>
-                    O grupo deverá desenvolver um site que exiba pontos geográficos de acordo com um tema escolhido. 
-                    Imagine um Google Maps com itens específicos exibidos no mapa como por exemplo praças de Campinas.
-                  </li>
-                </ul>                
-              </div>
-              <div style="text-align: center; margin-bottom: 10px;">
-                <img width="300" alt="Angular Logo" src="./../../assets/Captura de tela em 2020-08-06 23-05-42.png">
-              </div>              
-            </div>
-          </div>
-
-          <div class="panel panel-default">
+<div class="container">
+    <div class="row">
+      <div class="col-sm-8">
+          <h2>Projeto Final - Desenvolvimento WEB 2020</h2>
+          <p><strong>Nota:</strong> O grupo deverá desenvolver um site que exiba pontos geográficos de acordo com um tema escolhido. Imagine um Google Maps com itens específicos exibidos no mapa como por exemplo praças de Campinas. </p>
+          <div class="panel-group" id="accordion">
+  
+            <div class="panel panel-default">
               <div class="panel-heading">
                 <h4 class="panel-title">
-                  <a data-toggle="collapse" data-parent="#accordion" style="cursor:pointer;" (click)="openCloseCollapse('collapse2')">
-                      2. Regras</a>
+                  <a data-toggle="collapse" data-parent="#accordion" style="cursor:pointer;" (click)="openCloseCollapse('collapse1')">
+                    1. Descrição do projeto</a>
                 </h4>
               </div>
-              <div id="collapse1" class="panel-collapse collapse in" *ngIf="flag.coll2">
+              <div id="collapse1" class="panel-collapse collapse in" *ngIf="flag.coll1">
                 <div class="panel-body">
                   <ul>
                     <li>
-                      O projeto pode ser feito em duplas ou individual.
+                      O grupo deverá desenvolver um site que exiba pontos geográficos de acordo com um tema escolhido. 
+                      Imagine um Google Maps com itens específicos exibidos no mapa como por exemplo praças de Campinas.
                     </li>
-                  </ul>
+                  </ul>                
                 </div>
+                <div style="text-align: center; margin-bottom: 10px;">
+                  <img width="300" alt="Angular Logo" src="./../../assets/images/Captura de tela em 2020-08-06 23-05-42.png">
+                </div>              
               </div>
-          </div>
-            
-          <div class="panel panel-default">
-              <div class="panel-heading">
-                <h4 class="panel-title">
-                  <a data-toggle="collapse" data-parent="#accordion" style="cursor:pointer;" (click)="openCloseCollapse('collapse3')">
-                    3. Conteúdo do site e requisitos gerais</a>
-                </h4>
-              </div>
-              <div id="collapse1" class="panel-collapse collapse in" *ngIf="flag.coll3">
-                <div class="panel-body">
-                  <p class="espEsq"> a) &nbsp;&nbsp; Os dados de cada ponto devem ser lidos de arquivo Json ou XML.
-                  <p class="espEsq"> b) &nbsp;&nbsp; Cada ponto deve ter, além da sua localização geográfica, no mínimo 3 informações sobre o local. Por exemplo se for uma praça deve conter o nome da praça, inauguração e tamanho. Endereço é obrigatório.
-                  <p class="espEsq"> c) &nbsp;&nbsp; O arquivo de dados deve conter no mínimo 10 itens. Exemplo: Se forem praças devem conter pelo menos 10 praças.
-                  <p class="espEsq"> d) &nbsp;&nbsp; Quando o usuário apontar para algum elemento do mapa uma janela com informações sobre o local devem ser exibidas.
-                  <p class="espEsq"> e) &nbsp;&nbsp; Cada vez que a página for carregada trazer itens em destaque na página principal (fotos). Se forem praças trazer as 3 praças aleatórias em destaque.         
-                  <p class="espEsq"> f) &nbsp;&nbsp; Busca: Deve ser possível consultar os itens por endereço (rua, bairro, cidade).
-                  <p class="espEsq"> g) &nbsp;&nbsp; Deve ser possível marcar alguns itens como como favoritos. Esta marcação deve ficar armazenada no navegador.
-                  <p class="espEsq"> h) &nbsp;&nbsp; Crie um cabeçalho para navegação no site.
-                  <p class="espEsq"> i) &nbsp;&nbsp; Crie uma sessão Fale Conosco onde o usuário pode falar com os responsáveis pelo site. Essa página deve conter um formulário como nome, e-mail do usuário e uma área para ele digitar o comentário.
-                  <p class="espEsq"> j) &nbsp;&nbsp; Um rodapé com o tipo de licenciamento do site.
-                  <p class="espEsq"> k) &nbsp;&nbsp; Uma sessão com informações sobre o projeto e os autores.
-                  <p class="espEsq"> l) &nbsp;&nbsp; O site deve estar armazenado em algum provedor de hospedagem. Considerem utilizar o firebase que é gratuito.  
+            </div>
+  
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                  <h4 class="panel-title">
+                    <a data-toggle="collapse" data-parent="#accordion" style="cursor:pointer;" (click)="openCloseCollapse('collapse2')">
+                        2. Regras</a>
+                  </h4>
                 </div>
-              </div>
-          </div>
+                <div id="collapse1" class="panel-collapse collapse in" *ngIf="flag.coll2">
+                  <div class="panel-body">
+                    <ul>
+                      <li>
+                        O projeto pode ser feito em duplas ou individual.
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+            </div>
               
-          <div class="panel panel-default">
-              <div class="panel-heading">
-                <h4 class="panel-title">
-                  <a data-toggle="collapse" data-parent="#accordion" style="cursor:pointer;" (click)="openCloseCollapse('collapse4')">
-                    4. Temas</a>
-                </h4>
-              </div>
-              <div id="collapse1" class="panel-collapse collapse in" *ngIf="flag.coll4">
-                <div class="panel-body">
-                  <ul>
-                    <li>
-                      Tema 1: Cadastrar em um mapa os pontos culturais da cidade de Campinas.
-                    </li>
-                    <li>
-                      Tema 2: Cadastrar em um mapa todos os locais de atendimento de saúde de Campinas.
-                    </li>
-                    <li>
-                      Tema 3: Cadastrar em um mapa todas as escolas do município de Campinas.
-                    </li>
-                    <li>
-                      Tema 4: Cadastrar em um mapa praças ou centros esportivos públicos.
-                    </li>
-                    <li>
-                      Tema 5: Cadastrar em um mapa as baladas ou bares de Campinas.
-                    </li>
-                    <li>
-                      Tema 6: Cadastrar em um mapa os locais de serviços públicos de Campinas (prefeitura, câmara, inss, etc)
-                    </li>
-                    <li>
-                      Tema 7: Cadastrar em um mapa pontos que lembram a cultura negra em Campinas.
-                    </li>
-                    <li>
-                      Tema 8: Outro (Pergunte para o professor se sua ideia pode ser implementada.
-                    </li>         
-                  </ul>
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                  <h4 class="panel-title">
+                    <a data-toggle="collapse" data-parent="#accordion" style="cursor:pointer;" (click)="openCloseCollapse('collapse3')">
+                      3. Conteúdo do site e requisitos gerais</a>
+                  </h4>
                 </div>
-              </div>
-          </div>
+                <div id="collapse1" class="panel-collapse collapse in" *ngIf="flag.coll3">
+                  <div class="panel-body">
+                    <p class="espEsq"> a) &nbsp;&nbsp; Os dados de cada ponto devem ser lidos de arquivo Json ou XML.
+                    <p class="espEsq"> b) &nbsp;&nbsp; Cada ponto deve ter, além da sua localização geográfica, no mínimo 3 informações sobre o local. Por exemplo se for uma praça deve conter o nome da praça, inauguração e tamanho. Endereço é obrigatório.
+                    <p class="espEsq"> c) &nbsp;&nbsp; O arquivo de dados deve conter no mínimo 10 itens. Exemplo: Se forem praças devem conter pelo menos 10 praças.
+                    <p class="espEsq"> d) &nbsp;&nbsp; Quando o usuário apontar para algum elemento do mapa uma janela com informações sobre o local devem ser exibidas.
+                    <p class="espEsq"> e) &nbsp;&nbsp; Cada vez que a página for carregada trazer itens em destaque na página principal (fotos). Se forem praças trazer as 3 praças aleatórias em destaque.         
+                    <p class="espEsq"> f) &nbsp;&nbsp; Busca: Deve ser possível consultar os itens por endereço (rua, bairro, cidade).
+                    <p class="espEsq"> g) &nbsp;&nbsp; Deve ser possível marcar alguns itens como como favoritos. Esta marcação deve ficar armazenada no navegador.
+                    <p class="espEsq"> h) &nbsp;&nbsp; Crie um cabeçalho para navegação no site.
+                    <p class="espEsq"> i) &nbsp;&nbsp; Crie uma sessão Fale Conosco onde o usuário pode falar com os responsáveis pelo site. Essa página deve conter um formulário como nome, e-mail do usuário e uma área para ele digitar o comentário.
+                    <p class="espEsq"> j) &nbsp;&nbsp; Um rodapé com o tipo de licenciamento do site.
+                    <p class="espEsq"> k) &nbsp;&nbsp; Uma sessão com informações sobre o projeto e os autores.
+                    <p class="espEsq"> l) &nbsp;&nbsp; O site deve estar armazenado em algum provedor de hospedagem. Considerem utilizar o firebase que é gratuito.  
+                  </div>
+                </div>
+            </div>
                 
-          <div class="panel panel-default">
-              <div class="panel-heading">
-                <h4 class="panel-title">
-                  <a data-toggle="collapse" data-parent="#accordion" style="cursor:pointer;" (click)="openCloseCollapse('collapse5')">
-                    5. Data da entrega </a>
-                </h4>
-              </div>
-              <div id="collapse1" class="panel-collapse collapse in" *ngIf="flag.coll5">
-                <div class="panel-body">
-                  <ul>
-                    <li>
-                      09/09/2020: requisitos de A até E.   
-                    </li>
-                    <li>         
-                      30/09/2020: todos os requisitos.
-                    </li>                
-                  </ul>
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                  <h4 class="panel-title">
+                    <a data-toggle="collapse" data-parent="#accordion" style="cursor:pointer;" (click)="openCloseCollapse('collapse4')">
+                      4. Temas</a>
+                  </h4>
                 </div>
-              </div>
-          </div>
+                <div id="collapse1" class="panel-collapse collapse in" *ngIf="flag.coll4">
+                  <div class="panel-body">
+                    <ul>
+                      <li>
+                        Tema 1: Cadastrar em um mapa os pontos culturais da cidade de Campinas.
+                      </li>
+                      <li>
+                        Tema 2: Cadastrar em um mapa todos os locais de atendimento de saúde de Campinas.
+                      </li>
+                      <li>
+                        Tema 3: Cadastrar em um mapa todas as escolas do município de Campinas.
+                      </li>
+                      <li>
+                        Tema 4: Cadastrar em um mapa praças ou centros esportivos públicos.
+                      </li>
+                      <li>
+                        Tema 5: Cadastrar em um mapa as baladas ou bares de Campinas.
+                      </li>
+                      <li>
+                        Tema 6: Cadastrar em um mapa os locais de serviços públicos de Campinas (prefeitura, câmara, inss, etc)
+                      </li>
+                      <li>
+                        Tema 7: Cadastrar em um mapa pontos que lembram a cultura negra em Campinas.
+                      </li>
+                      <li>
+                        Tema 8: Outro (Pergunte para o professor se sua ideia pode ser implementada.
+                      </li>         
+                    </ul>
+                  </div>
+                </div>
+            </div>
                   
-          <div class="panel panel-default">
-              <div class="panel-heading">
-                <h4 class="panel-title">
-                  <a data-toggle="collapse" data-parent="#accordion" style="cursor:pointer;" (click)="openCloseCollapse('collapse6')">
-                    6. Avaliação</a>
-                </h4>
-              </div>
-              <div id="collapse1" class="panel-collapse collapse in" *ngIf="flag.coll6">
-                <div class="panel-body">
-                  <p class="espEsq">  Critérios de Avaliação &nbsp; / &nbsp; Peso:                        
-                  <p class="espEsq"> a) &nbsp;&nbsp; Organização  &nbsp; <b><i class="rColor">10%</i></b>                  
-                  <p class="espEsq"> b) &nbsp;&nbsp; HTML         &nbsp; <b><i class="rColor">20%</i></b>                  
-                  <p class="espEsq"> c) &nbsp;&nbsp; CSS          &nbsp; <b><i class="rColor">20%</i></b>                  
-                  <p class="espEsq"> d) &nbsp;&nbsp; Javascript   &nbsp; <b><i class="rColor">30%</i></b>                
-                  <p class="espEsq"> e) &nbsp;&nbsp; Hospedagem   &nbsp; <b><i class="rColor">10%</i></b>                   
-                  <p class="espEsq"> f) &nbsp;&nbsp; Apresentação &nbsp; <b><i class="rColor">10%</i></b>    
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                  <h4 class="panel-title">
+                    <a data-toggle="collapse" data-parent="#accordion" style="cursor:pointer;" (click)="openCloseCollapse('collapse5')">
+                      5. Data da entrega </a>
+                  </h4>
                 </div>
-              </div>
-          </div>              
-
-        </div> 
+                <div id="collapse1" class="panel-collapse collapse in" *ngIf="flag.coll5">
+                  <div class="panel-body">
+                    <ul>
+                      <li>
+                        09/09/2020: requisitos de A até E.   
+                      </li>
+                      <li>         
+                        30/09/2020: todos os requisitos.
+                      </li>                
+                    </ul>
+                  </div>
+                </div>
+            </div>
+                    
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                  <h4 class="panel-title">
+                    <a data-toggle="collapse" data-parent="#accordion" style="cursor:pointer;" (click)="openCloseCollapse('collapse6')">
+                      6. Avaliação</a>
+                  </h4>
+                </div>
+                <div id="collapse1" class="panel-collapse collapse in" *ngIf="flag.coll6">
+                  <div class="panel-body">
+                    <p class="espEsq">  Critérios de Avaliação &nbsp; / &nbsp; Peso:                        
+                    <p class="espEsq"> a) &nbsp;&nbsp; Organização  &nbsp; <b><i class="rColor">10%</i></b>                  
+                    <p class="espEsq"> b) &nbsp;&nbsp; HTML         &nbsp; <b><i class="rColor">20%</i></b>                  
+                    <p class="espEsq"> c) &nbsp;&nbsp; CSS          &nbsp; <b><i class="rColor">20%</i></b>                  
+                    <p class="espEsq"> d) &nbsp;&nbsp; Javascript   &nbsp; <b><i class="rColor">30%</i></b>                
+                    <p class="espEsq"> e) &nbsp;&nbsp; Hospedagem   &nbsp; <b><i class="rColor">10%</i></b>                   
+                    <p class="espEsq"> f) &nbsp;&nbsp; Apresentação &nbsp; <b><i class="rColor">10%</i></b>    
+                  </div>
+                </div>
+            </div>              
+  
+          </div> 
       </div>
+      <!-- IMAGEM DIREITA -->
+      <div class="col-sm-4" style="margin-top:8%;">
+          <div style="margin-left: 10px"><br>
+              <img width="300" alt="Angular Logo" src="./../assets/images/1200px-Instituto_Federal_de_São_Paulo_-_Marca_Vertical_2015.svg.png">
+          </div>                   
+      </div>    
+    </div>
+  </div>
 
-</div>
 
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>

@@ -4,50 +4,67 @@
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
 
 
-<div class="container-fluid" style="text-align:center;">
-        <h2>Formulário</h2>
-        <div class="container-fluid">     
-            <div class="row">
-            <div class="col-sm">
-                <div class="container">
-                    <h3>Dados Pessoais</h3>
-                    <p>Make the viewport larger than 768px wide to see that all of the form elements are inline, left aligned, and the labels are alongside.</p>
-                    <form class="form-inline" action="/action_page.php">
-                        <div class="form-group" style="margin-bottom: 10px;">
-                            <b for="nome">Nome:</b>
-                            <input type="nome" class="form-control" id="nome" placeholder="Entre com o nome" name="nome">
-                        </div>                        
-                        <div class="form-group" style="margin-bottom: 10px;">
-                            <b for="email">Email:</b>
-                            <input type="email" class="form-control" id="email" placeholder="Entre com o email" name="email">
+<div class="container-fluid" style="text-align:center;"><br>
+    <div class="container-fluid">     
+        <div class="row">
+        <div class="col-sm">
+            <div class="container">
+                <h3>Fale Conosco</h3>
+                <p> Deixe um comentário, sugestão, elogio ou crítica. Em breve entraremos em contato com você! </p>
+                <form class="form-inline">
+
+                    <div class="form-group col-sm-12" style="margin-bottom: 10px;">
+                        <div class="form-group col-sm-12">
+                            <div class="alert {{classeCss}}" role="alert" style="width: 100%" *ngIf="flagAlert">
+                                <strong>Aviso:</strong> &nbsp; {{message}}
+                                <button type="button" class="close" data-dismiss="alert" aria-label="Close" (click)="fechaAviso()">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>                                
+                            </div>
                         </div>
-                        <div class="form-group" style="margin-bottom: 10px;">
-                            <b for="tel">Telefone:</b>
-                            <input type="text" class="form-control" id="tel" placeholder="Entre com o telefone" name="tel">
-                        </div>
-                    </form>
-                </div>  
-                <h5>Botões</h5>
-                <div class="container">
-                    <h2>Button Outline</h2>
-                    <button type="button" class="btn btn-outline-primary">Primary</button>
-                    <button type="button" class="btn btn-outline-secondary">Secondary</button>
-                    <button type="button" class="btn btn-outline-success">Success</button>
-                    <button type="button" class="btn btn-outline-info">Info</button>
-                    <button type="button" class="btn btn-outline-warning">Warning</button>
-                    <button type="button" class="btn btn-outline-danger">Danger</button>
-                    <button type="button" class="btn btn-outline-dark">Dark</button>
-                    <button type="button" class="btn btn-outline-light text-dark">Light</button>
-                </div>                                                
-            </div>
-            <!-- IMAGEM DIREITA -->
-            <div class="col-sm">
-                <div><br>
-                    <img width="300" alt="Angular Logo" src="./../assets/0_n3DRTlqqLO7oXyuv.png">
-                </div>                   
-            </div>
-            </div>
-        </div>  
+                    </div>
+
+                    <div class="form-group col-sm-12" style="margin-bottom: 10px;">
+                        <div class="form-group col-sm-2"><b for="nome">Nome:</b></div>
+                        <div class="form-group col-sm-10">
+                            <input type="text" class="form-control" id="nome" placeholder="Nome" name="nome" 
+                            [(ngModel)]="object.nome" [ngModelOptions]="{standalone: true}" style="width: 100%">
+                        </div>                       
+                    </div>       
+                    <div class="form-group col-sm-12" style="margin-bottom: 10px;">
+                        <div class="form-group col-sm-2"><b for="email">Email:</b></div>
+                        <div class="form-group col-sm-10">
+                            <input type="text" class="form-control" id="email" placeholder="Email" name="email" 
+                            style="width: 100%" [(ngModel)]="object.email" [ngModelOptions]="{standalone: true}">
+                        </div>                       
+                    </div>                          
+                    <div class="form-group col-sm-12" style="margin-bottom: 10px;">
+                        <div class="form-group col-sm-2"><b for="comentario">Comentário:</b></div>
+                        <div class="form-group col-sm-10">
+                            <textarea class="form-control" id="comentario" rows="3" placeholder="Comentário"
+                            [(ngModel)]="object.comentario" [ngModelOptions]="{standalone: true}" style="width: 100%"></textarea>
+                        </div>                       
+                    </div>    
+                    <div class="form-group col-sm-12" style="margin-bottom: 10px;">
+                        <div class="form-group col-sm-8"></div>
+                        <div class="form-group col-sm-2">
+                            <button type="button" class="btn btn-outline-warning" (click)="limpaForm()">Limpar</button>
+                        </div>    
+                        <div class="form-group col-sm-2">
+                            <button type="button" class="btn btn-outline-success" (click)="enviar()">Enviar</button>
+                        </div>                                          
+                    </div>                       
+                </form>
+            </div> <br>                                           
+        </div>
+        <!-- IMAGEM DIREITA -->
+        <div class="col-sm">
+            <div><br>
+                <img width="300" alt="Angular Logo" src="./../assets/images/0_n3DRTlqqLO7oXyuv.png">
+            </div>                   
+        </div>
+        </div>
+    </div>  
     </div>
 
 
