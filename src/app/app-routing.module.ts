@@ -8,7 +8,8 @@ import { SobreComponent } from './sobre/sobre.component'
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
 
 const routes: Routes = [
-  {path: '', component: PageNotFoundComponent},
+  {path: '', component: HomeComponent},
+  {path: '*/', component: PageNotFoundComponent},
   {path: 'home', component: HomeComponent},
   {path: 'menu', component: MenuComponent},
   {path: 'principal', component: PrincipalComponent},
