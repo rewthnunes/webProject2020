@@ -7,6 +7,8 @@ import { Component, OnInit } from '@angular/core';
 })
 export class RodapeComponent implements OnInit {
 
+  public textoRodape = "Copyright © 2020 Rewth. Todos os direitos reservados."
+
   constructor() { }
 
   ngOnInit() {

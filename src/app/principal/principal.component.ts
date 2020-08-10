@@ -1,7 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import data from './../../assets/files/data.json';
-
-declare var require: any
+import data from './../../assets/files/dataObject.json';
 
 @Component({
   selector: 'app-principal',
@@ -10,10 +8,11 @@ declare var require: any
 })
 export class PrincipalComponent implements OnInit {
 
-  constructor() { }
+  arrayCidades: any;
+
+  constructor() { this.arrayCidades = data }
 
   ngOnInit() {
-    console.log('>>>>> ', data)
   }
 
 

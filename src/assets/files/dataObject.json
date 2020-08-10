@@ -1,0 +1,26 @@
+{
+    "infoCidades": [
+        {"la": -22.8216, "lo": -47.2664, "cidade": "Sumaré", "resp": null},
+        {"la": -22.8577, "lo": -47.2203, "cidade": "Hortolândia", "resp": null},
+        {"la": -22.7388, "lo": -47.3319, "cidade": "Americana", "resp": null},
+        {"la": -23.0301, "lo": -46.9756, "cidade": "Vinhedo", "resp": null},
+        {"la": -22.9712, "lo": -46.9964, "cidade": "Valinhos", "resp": null},
+        {"la": -22.7617, "lo": -47.1541, "cidade": "Paulinia", "resp": null},
+        {"la": -22.6333, "lo": -47.0564, "cidade": "Holambra", "resp": null},
+        {"la": -22.7058, "lo": -46.9862, "cidade": "Jaguariúna", "resp": null},
+        {"la": -22.7547, "lo": -47.4144, "cidade": "Santa Barbara d'Oeste", "resp": null},
+        {"la": -22.7419, "lo": -46.9017, "cidade": "Pedreira", "resp": null},
+        {"la": -22.6066, "lo": -46.9193, "cidade": "Santo Antônio de Posse", "resp": null},
+        {"la": -23.0882, "lo": -47.2234, "cidade": "Indaiatuba", "resp": null},
+        {"la": -22.9472, "lo": -47.3168, "cidade": "Monte Mor", "resp": null},
+        {"la": -22.5735, "lo": -47.1733, "cidade": "Artur Nogueira", "resp": null},
+        {"la": -22.7799, "lo": -47.2963, "cidade": "Nova Odessa", "resp": null},
+        {"la": -22.6462, "lo": -47.1967, "cidade": "Cosmópolis", "resp": null},
+        {"la": -23.0068, "lo": -46.8387, "cidade": "Itatiba", "resp": null},
+        {"la": -22.8804, "lo": -46.7923, "cidade": "Morungaba", "resp": null},
+        {"la": -22.4882, "lo": -47.2158, "cidade": "Engenheiro Coelho", "resp": null},
+        {"la": -22.4767, "lo": -46.6334, "cidade": "Águas de Lindóia", "resp": null},
+        {"la": -22.9949, "lo": -47.5095, "cidade": "Capivari", "resp": null},
+        {"la": -22.4134, "lo": -47.5696, "cidade": "Rio Claro", "resp": null}        
+    ]
+}
