@@ -18,9 +18,6 @@
         {"la": -22.6462, "lo": -47.1967, "cidade": "Cosmópolis", "resp": null},
         {"la": -23.0068, "lo": -46.8387, "cidade": "Itatiba", "resp": null},
         {"la": -22.8804, "lo": -46.7923, "cidade": "Morungaba", "resp": null},
-        {"la": -22.4882, "lo": -47.2158, "cidade": "Engenheiro Coelho", "resp": null},
-        {"la": -22.4767, "lo": -46.6334, "cidade": "Águas de Lindóia", "resp": null},
-        {"la": -22.9949, "lo": -47.5095, "cidade": "Capivari", "resp": null},
-        {"la": -22.4134, "lo": -47.5696, "cidade": "Rio Claro", "resp": null}        
+        {"la": -22.4882, "lo": -47.2158, "cidade": "Engenheiro Coelho", "resp": null}
     ]
 }
