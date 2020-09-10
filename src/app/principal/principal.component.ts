@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+
+// IMPORTACAO DO ARQUIVO .JSON COM TODA GEOLOCALIZACAO DAS CIDADES ABORDADAS
 import data from './../../assets/files/dataObject.json';
 
 @Component({
