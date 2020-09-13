@@ -1,27 +1,125 @@
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
-
-<div class="container-fluid" style="text-align:center;">
-    <h2>20201.5.CMP24100.1N.SUP.02594 (DWEL5) 254494 DESENVOLVIMENTO WEB</h2>
+<div class="container">    
     <div class="container-fluid">     
-        <div class="row">
-        <div class="col-sm bg-success">
-            <div>
-                <img width="300" alt="Angular Logo" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNTAgMjUwIj4KICAgIDxwYXRoIGZpbGw9IiNERDAwMzEiIGQ9Ik0xMjUgMzBMMzEuOSA2My4ybDE0LjIgMTIzLjFMMTI1IDIzMGw3OC45LTQzLjcgMTQuMi0xMjMuMXoiIC8+CiAgICA8cGF0aCBmaWxsPSIjQzMwMDJGIiBkPSJNMTI1IDMwdjIyLjItLjFWMjMwbDc4LjktNDMuNyAxNC4yLTEyMy4xTDEyNSAzMHoiIC8+CiAgICA8cGF0aCAgZmlsbD0iI0ZGRkZGRiIgZD0iTTEyNSA1Mi4xTDY2LjggMTgyLjZoMjEuN2wxMS43LTI5LjJoNDkuNGwxMS43IDI5LjJIMTgzTDEyNSA1Mi4xem0xNyA4My4zaC0zNGwxNy00MC45IDE3IDQwLjl6IiAvPgogIDwvc3ZnPg==">
+        <div style="text-align: right"> <h2>Cidades da região metropolitana de campinas</h2> </div>             
+        <div class="panel-group" id="accordion">  
+            <div class="panel panel-default" >
+                <div class="panel-heading">
+                    <h4 class="panel-title titCollapse">
+                        <a data-toggle="collapse" data-parent="#accordion" (click)="openCloseCollapse('collapse1')">
+                            Sobre RMC
+                        </a>
+                    </h4>
+                </div>
+                <div id="collapse1" class="panel-collapse collapse in" *ngIf="flag.coll1">
+                    <div class="panel-body">
+                        <div class="row"><br>
+                            <div class="col-sm-12 float-center"><h4>Campinas e sua região</h4><hr></div>
+                            <div class="col-sm"><br>                
+                                <p>
+                                    A Região Metropolitana de Campinas foi criada em 2000 e é integrada por 20 municípios: Americana, Artur Nogueira, Campinas, Cosmópolis, Engenheiro Coelho, Holambra, Hortolândia, Indaiatuba, Itatiba, Jaguariúna, Monte Mor, Morungaba, Nova Odessa, Paulínia, Pedreira, Santa Bárbara d'Oeste, Santo Antônio de Posse, Sumaré, Valinhos e Vinhedo. É a segunda maior região metropolitana do Estado de São Paulo em população, com mais de 3,2 milhões de habitantes, de acordo com estimativa do Instituto Brasileiro de Geografia e Estatística (IBGE) para 2018, e gerou 8,75% do Produto Interno Bruto (PIB) estadual em 2016.                
+                                </p>
+                            </div>
+                            <div class="col-sm"><br>
+                                <p>
+                                    Nos últimos anos, a região vem ocupando e consolidando importante posição econômica nos níveis estadual e nacional. Contígua à Região Metropolitana de São Paulo, a RMC comporta um parque industrial moderno, diversificado e composto por segmentos setoriais complementares. Possui uma estrutura agrícola e agroindustrial bastante significativa e desempenha atividades terciárias de expressiva especialização. Destaca-se, ainda, pela presença de centros inovadores no campo das pesquisas científica e tecnológica, bem como do Aeroporto de Viracopos, localizado no município de Campinas, o segundo maior do país em transporte de carga. Em 2015, foi a maior porta de entrada de mercadorias importadas.
+                                </p>          
+                            </div>
+                            <div class="col-sm"><br>
+                                <div class="col-sm-12"><br>
+                                    <img class="img-Adjust" alt="Região Campinas mapa" src="./../assets/images/mapa_RMC_large.jpg">
+                                </div>                   
+                            </div>
+                        </div>                
+                    </div>           
+                </div>
             </div>
-        </div>
-        <div class="col-sm bg-warning">
-            <div><br>
-                <img width="300" alt="Angular Logo" src="./../assets/images/1200px-Instituto_Federal_de_São_Paulo_-_Marca_Vertical_2015.svg.png">
-            </div>            
-        </div>
-        <div class="col-sm bg-success">
-            <div><br>
-                <img width="300" alt="Angular Logo" src="./../assets/images/0_n3DRTlqqLO7oXyuv.png">
-            </div>                   
-        </div>
-        </div>
+    
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                    <h4 class="panel-title titCollapse">
+                        <a data-toggle="collapse" data-parent="#accordion" (click)="openCloseCollapse('collapse2')">
+                            Indicadores RMC
+                        </a>
+                    </h4>
+                </div>
+                <div id="collapse1" class="panel-collapse collapse in" *ngIf="flag.coll2">
+                    <div class="panel-body">
+                        <div class="row"><br>
+                            <div class="col-sm-12 float-center"><h4>Dados da região</h4><hr></div>
+                            <div class="col-sm table-action"><br>                
+                                <table class="table table-striped">
+                                    <thead class="thead-dark">
+                                        <tr>
+                                        <th>Municípios</th>
+                                        <th>Área (km²)¹</th>
+                                        <th>População 2018¹</th>
+                                        <th>Densidade Demográfica 2018 (hab/km²)¹</th>
+                                        <th>TGCA 2010/2018 (%)²</th>
+                                        <th>PIB 2016 (mil reais)¹</th>
+                                        <th>Distância até São Paulo (km)³</th>
+                                        <th style="width: 50px; text-align: center">Ir ao mapa</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr *ngFor="let item of detalhes; let i = index">
+                                        <th>{{item.cidade}}</th>
+                                        <td>{{item.area}}</td>
+                                        <td>{{item.populacao}}</td>
+                                        <td>{{item.densidade}}</td>
+                                        <td>{{item.tgca}}</td>
+                                        <td>{{item.pib}}</td>
+                                        <td style="text-align: center">{{item.distancia}} Km</td>     
+                                        <td class="links-tabela" (click)="irAoMApa(item, i)">
+                                            <a>
+                                                <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-reply-fill" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M9.079 11.9l4.568-3.281a.719.719 0 0 0 0-1.238L9.079 4.1A.716.716 0 0 0 8 4.719V6c-1.5 0-6 0-7 8 2.5-4.5 7-4 7-4v1.281c0 .56.606.898 1.079.62z"/>
+                                                </svg>
+                                            </a>
+                                        </td>               
+                                        </tr>
+                                    </tbody>
+                                </table>  
+                                <div class="col-sm-12 infoDados"><br>
+                                    <span>¹Fonte: IBGE</span> &nbsp; | &nbsp;
+                                    <span>²Fonte: Emplasa</span> &nbsp; | &nbsp;
+                                    <span>³Fonte: DER - Departamento de Estradas de Rodagem</span> &nbsp; | &nbsp;
+                                    <span>Elaboração: Emplasa, GIP/CDI, 2019.</span>        
+                                </div><br>    
+                            </div>
+                        </div>                
+                    </div>           
+                </div>
+            </div>         
+        </div>    
     </div>  
 </div>
+
+<p-carousel [value]="products" styleClass="custom-carousel" [numVisible]="3" [numScroll]="1" [circular]="true" [autoplayInterval]="3000" [responsiveOptions]="responsiveOptions">
+        <ng-template pTemplate="header">
+            <h5>Circular, AutoPlay, 3 Items per Page and Scroll by 1</h5>
+        </ng-template>
+        <ng-template let-product pTemplate="item">
+            <div class="product-item">
+                <div class="product-item-content">
+                    <div class="p-mb-3">
+                        <img src="assets/showcase/images/demo/product/{{product.image}}" [alt]="product.name" class="product-image" />
+                    </div>
+                    <div>
+                        <h4 class="p-mb-1">{{product.name}}</h4>
+                        <h6 class="p-mt-0 p-mb-3">${{product.price}}</h6>
+                        <span [class]="'product-badge status-'+product.inventoryStatus.toLowerCase()">{{product.inventoryStatus}}</span>
+                        <div class="car-buttons p-mt-5">
+                            <p-button type="button" styleClass="p-button p-button-rounded p-mr-2" icon="pi pi-search"></p-button>
+                            <p-button type="button" styleClass="p-button-success p-button-rounded p-mr-2" icon="pi pi-star"></p-button>
+                            <p-button type="button" styleClass="p-button-help p-button-rounded" icon="pi pi-cog"></p-button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </ng-template>
+    </p-carousel>
+
+
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>

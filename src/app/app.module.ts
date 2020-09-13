@@ -12,6 +12,7 @@ import { ContatoComponent } from './contato/contato.component';
 import { SobreComponent } from './sobre/sobre.component';
 import { InputTextareaModule } from 'primeng/inputtextarea';
 import { FormsModule }   from '@angular/forms';
+import { CarouselModule } from 'primeng/carousel';
 import { MapComponent } from './map/map.component';
 
 @NgModule({
@@ -30,6 +31,7 @@ import { MapComponent } from './map/map.component';
   imports: [
     BrowserModule,
     AppRoutingModule,
+    CarouselModule,
     InputTextareaModule,
     FormsModule
   ],
