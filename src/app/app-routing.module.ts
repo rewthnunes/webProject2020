@@ -5,6 +5,7 @@ import { MenuComponent } from './menu/menu.component';
 import { PrincipalComponent } from './principal/principal.component';
 import { ContatoComponent } from './contato/contato.component'
 import { SobreComponent } from './sobre/sobre.component'
+import { MapComponent } from './map/map.component'
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
 
 const routes: Routes = [
@@ -14,7 +15,8 @@ const routes: Routes = [
   {path: 'menu', component: MenuComponent},
   {path: 'principal', component: PrincipalComponent},
   {path: 'contato', component: ContatoComponent},
-  {path: 'sobre', component: SobreComponent}
+  {path: 'sobre', component: SobreComponent},
+  {path: 'map', component: MapComponent}
 ];
 
 @NgModule({

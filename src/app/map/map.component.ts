@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Router, ActivatedRoute } from '@angular/router';
 
 // IMPORTACAO DEPENDENCIAS LIB LEAFLET
 import * as L from 'leaflet';
@@ -18,12 +19,19 @@ export class MapComponent implements OnInit {
   private campinasData = data
   private arrayCityes = arrayCity
 
-  constructor() { }
+  constructor( private route: ActivatedRoute ) { }
 
   ngOnInit() {
     //this.initSouthAmerica()
     this.initCampinas()
+    this.trataChamador()
   }
+
+
+  trataChamador() {
+    this.route.snapshot.params
+  }
+
 
   private initSouthAmerica(): void {
     this.map = L.map('map', {

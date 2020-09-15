@@ -12,7 +12,8 @@ import { ContatoComponent } from './contato/contato.component';
 import { SobreComponent } from './sobre/sobre.component';
 import { InputTextareaModule } from 'primeng/inputtextarea';
 import { FormsModule }   from '@angular/forms';
-import { CarouselModule } from 'primeng/carousel';
+import { CarouselModule } from 'ngx-bootstrap/carousel';
+import { HttpClientModule } from '@angular/common/http';
 import { MapComponent } from './map/map.component';
 
 @NgModule({
@@ -33,7 +34,8 @@ import { MapComponent } from './map/map.component';
     AppRoutingModule,
     CarouselModule,
     InputTextareaModule,
-    FormsModule
+    FormsModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
